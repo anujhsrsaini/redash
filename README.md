@@ -46,16 +46,16 @@ git clone https://github.com/anujhsrsaini/redash.git
 
 *You can change the environment variables if you want but there isn't much need for it.*
 
-2. Run the below command to create a DB to store necessary information of Redash in PostgreSQL.
-
-```sh
-docker-compose run — rm server create_db
-```
-
-3. Run the docker container using the below command to run it in detached mode.
+2. Build and Run the docker container using the below command to run Redash it in detached mode.
 
 ```sh
 docker-compose up -d
+```
+
+3. Run the below command to create a DB to store necessary information of Redash in PostgreSQL within the container.
+
+```sh
+docker-compose run — rm server create_db
 ```
 
 4. Use the browser to navigate to localhost:5000 to setup redash initially.
